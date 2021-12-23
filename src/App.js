@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import styles from './styles/App.module.sass'
+import { Routes, Route } from 'react-router-dom'
+import MainPage from "./pages/MainPage"
 
 function App() {
+  useEffect(() => {
+    const iframe = document.querySelector("iframe")
+    if (iframe) return iframe.style.display = 'none'
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Routes>
+        <Route path={'/'} element={<MainPage />} />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
