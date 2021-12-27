@@ -1,0 +1,33 @@
+.section
+  padding: 80px 0
+  background: #5957cd
+
+.wrapper
+  margin: 76px 0 0
+  display: flex
+  grid-gap: 24px
+  align-items: center
+
+.img
+  width: 35%
+  height: 290px
+  object-fit: contain
+  animation: truck 3.5s linear infinite
+
+.colRight
+  width: 65%
+  display: grid
+  grid-gap: 22px
+  grid-template-columns: repeat(2, 1fr)
+
+@keyframes truck
+  0%
+    transform: translateY(-0px)
+  25%
+    transform: translateY(-20px)
+  50%
+    transform: translateY(0)
+  75%
+    transform: translateY(20px)
+  100%
+    transform: translateY(0)
