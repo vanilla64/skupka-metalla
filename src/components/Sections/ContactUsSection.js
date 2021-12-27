@@ -27,12 +27,19 @@ function ContactUsSection() {
               />
               <ButtonContactUs />
             </form>
+
+            <div className={styles.buttonChat}>
+              <p className={styles.chatText}>Есть операторы онлайн</p>
+              <div className={styles.circle} />
+            </div>
+
           </div>
 
           <div className={styles.bestOfferContainer}>
             <h3> Лучшие условия для сдачи лома !</h3>
             <BestOfferList />
           </div>
+
         </div>
       </div>
     </section>

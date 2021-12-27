@@ -7,7 +7,7 @@ function WhatWeDoSection() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <SectionTitle title={'Мы принимаем любой металлолом'} />
+        <SectionTitle divider title={'Мы принимаем любой металлолом'} />
         <WhatWeTakeList />
       </div>
     </section>
