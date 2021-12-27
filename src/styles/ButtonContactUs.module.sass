@@ -1,0 +1,32 @@
+.button
+  background: transparent
+  border-radius: 10px
+  cursor: pointer
+  font-size: 16px
+  font-weight: 700
+  outline: none
+  overflow: hidden
+  padding: 10px 40px
+  position: relative
+  border: 2px solid #ff9d02
+  color: #ff9d02
+  transition: all .3s linear
+  span
+    position: relative
+    z-index: 1
+  &:after
+    background-color: #ff9d02
+    bottom: 0
+    content: ""
+    height: 100%
+    left: -10%
+    position: absolute
+    transform: skewx(-45deg)
+    transition: .5s
+    width: 22%
+    z-index: 0
+  &:hover
+    color: #fff
+    &:after
+      left: -10%
+      width: 120%

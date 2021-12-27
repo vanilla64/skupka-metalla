@@ -8,7 +8,6 @@ function WhatWeDoSection() {
     <section className={styles.section}>
       <div className="container">
         <SectionTitle title={'Мы принимаем любой металлолом'} />
-
         <WhatWeTakeList />
       </div>
     </section>
