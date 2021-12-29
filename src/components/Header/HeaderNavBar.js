@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "../../styles/Header.module.sass"
 import Logo from "../Logo"
 import HeaderNavigation from "./HeaderNavigation"
-import Phones from "./Phones";
+import Phones from "./Phones"
 
 function HeaderNavBar() {
   return (
