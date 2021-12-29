@@ -3,9 +3,13 @@ import styles from '../../styles/sections/WhyWeFirstSection.module.sass'
 import SectionTitle from "./SectionTitle"
 import truckImg from '../../images/pic-serv-2.png'
 import WhyWeFirstCard from "../cards/WhyWeFirstCard"
-import TruckIcon from "../icons/TruckIcon"
 import ClipboardCheckIcon from "../icons/ClipboardCheckIcon"
 import { motion } from "framer-motion"
+import CashStackIconOrange from "../icons/CashStackIconOrange"
+import ChatIcon from "../icons/ChatIcon"
+import PeopleIcon from "../icons/PeopleIcon"
+import TruckOrange from "../icons/TruckOrange"
+import TruckBigOrange from "../icons/TruckBigOrange"
 
 function WhyWeFirstSection() {
   const container = {
@@ -39,27 +43,27 @@ function WhyWeFirstSection() {
               text={'Автоматизированный кол. центр не заставит ждать'} />
 
             <WhyWeFirstCard
-              icon={<TruckIcon />}
+              icon={<CashStackIconOrange />}
               title={'Оплата'}
               text={'Оплата происходит моментально и любым удобным для вас способом'} />
 
             <WhyWeFirstCard
-              icon={<TruckIcon />}
+              icon={<ChatIcon />}
               title={'Консультация'}
               text={'Помогаем с оценкой вашего металлолома по одной фотографии'} />
 
             <WhyWeFirstCard
-              icon={<TruckIcon />}
+              icon={<PeopleIcon />}
               title={'Команда'}
               text={'Наши бригады работают с строгими саблюдениями техники безопасности'} />
 
             <WhyWeFirstCard
-              icon={<TruckIcon />}
+              icon={<TruckOrange />}
               title={'Логистика'}
               text={'Наш логистический центр моментально реагирует на заявки выезда'} />
 
             <WhyWeFirstCard
-              icon={<TruckIcon />}
+              icon={<TruckBigOrange />}
               title={'Техника'}
               text={'Наш автопарк состит из более чем 150 единиц техники'} />
           </motion.ul>

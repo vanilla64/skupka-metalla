@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle"
 import styles from "../../styles/sections/AboutUsSection.module.sass"
 import { motion } from "framer-motion"
 import truckImg from "../../images/truck.png"
-import pointsImg from "../../images/demontaj.png";
+import pointsImg from "../../images/demontaj.png"
 
 function SectionWithImage() {
   return (

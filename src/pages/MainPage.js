@@ -10,6 +10,10 @@ import ContactUsMiniSection from "../components/Sections/ContactUsMiniSection"
 import SectionWithImage from "../components/Sections/SectionWithImage"
 import ExportSection from "../components/Sections/ExportSection"
 import WhyWeFirstSection from "../components/Sections/WhyWeFirstSection"
+import GuaranteesSection from "../components/Sections/GuaranteesSection"
+import BecomeOurClient from "../components/Sections/BecomeOurClient"
+import PartnersSection from "../components/Sections/PartnersSection"
+import ReviewsSection from "../components/Sections/ReviewsSection"
 
 function MainPage() {
   return (
@@ -24,6 +28,10 @@ function MainPage() {
       <ContactUsMiniSection />
       <ExportSection />
       <WhyWeFirstSection />
+      <GuaranteesSection />
+      <BecomeOurClient />
+      <PartnersSection />
+      <ReviewsSection />
     </MainLayout>
   )
 }
