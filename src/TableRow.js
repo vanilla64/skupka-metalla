@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TableRow({ img, title, priseOpt, priceRozn, bgGrey }) {
+function TableRow({ img, title, priseOpt, priceRozn, weight = ' кг', bgGrey }) {
   return (
     <tr style={bgGrey ? { background: '#f2f2f2' } : { background: "transparent" }}>
       <th>
@@ -10,8 +10,8 @@ function TableRow({ img, title, priseOpt, priceRozn, bgGrey }) {
       </th>
       <th>{ title }</th>
       <th>
-        <p>{ priseOpt + 'кг оптом' }</p>
-        <p>{ priceRozn + 'кг в розницу' }</p>
+        <p>{ priseOpt + weight + ' оптом' }</p>
+        <p>{ priceRozn + weight + ' в розницу' }</p>
       </th>
     </tr>
   )

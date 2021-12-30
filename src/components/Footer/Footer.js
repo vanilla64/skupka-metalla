@@ -1,9 +1,12 @@
 import React from 'react'
 import styles from '../../styles/Footer.module.sass'
 import Logo from "../Logo"
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom"
+import { ROUTES } from "../../constants/ROUTES"
 
 function Footer() {
+  const { ABOUT, SERVICES, REVIEWS, PRICE, CONTACTS } = ROUTES
+
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -15,19 +18,19 @@ function Footer() {
             <nav>
               <ul className={styles.list}>
                 <li>
-                  <NavLink className={styles.navLink} to={'/'}>О компании</NavLink>
+                  <NavLink className={styles.navLink} to={ABOUT}>О компании</NavLink>
                 </li>
                 <li>
-                  <NavLink className={styles.navLink} to={'/'}>Услуги</NavLink>
+                  <NavLink className={styles.navLink} to={SERVICES}>Услуги</NavLink>
                 </li>
                 <li>
-                  <NavLink className={styles.navLink} to={'/'}>Прайс-лист</NavLink>
+                  <NavLink className={styles.navLink} to={PRICE}>Прайс-лист</NavLink>
                 </li>
                 <li>
-                  <NavLink className={styles.navLink} to={'/'}>Отзывы</NavLink>
+                  <NavLink className={styles.navLink} to={REVIEWS}>Отзывы</NavLink>
                 </li>
                 <li>
-                  <NavLink className={styles.navLink} to={'/'}>Контакты</NavLink>
+                  <NavLink className={styles.navLink} to={CONTACTS}>Контакты</NavLink>
                 </li>
               </ul>
             </nav>
@@ -47,14 +50,20 @@ function Footer() {
         </div>
         <div className={styles.copyrightContainer}>
           <p className={styles.copyright}>Copyright © 2021 Все права защищены.</p>
-          <a href={'/'} className={styles.policy}>Политика конфиденциальности</a>
+          {/*<a href={'/'} className={styles.policy}>Политика конфиденциальности</a>*/}
+
+          <div className={styles.roboweb}>
+            <p>
+              Разработка и продвижение <a href="https://roboweb.team/" rel="noreferrer" target="_blank">roboweb.team</a>
+            </p>
+          </div>
         </div>
 
-        <div className={styles.roboweb}>
-          <p>
-            Разработка и продвижение <a href="https://roboweb.team/" rel="noreferrer" target="_blank">roboweb.team</a>
-          </p>
-        </div>
+        {/*<div className={styles.roboweb}>*/}
+        {/*  <p>*/}
+        {/*    Разработка и продвижение <a href="https://roboweb.team/" rel="noreferrer" target="_blank">roboweb.team</a>*/}
+        {/*  </p>*/}
+        {/*</div>*/}
       </div>
     </footer>
   )

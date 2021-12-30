@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../images/logo-black.svg'
 import styles from '../styles/Logo.module.sass'
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
 function Logo() {
   const variants = {
@@ -17,13 +18,15 @@ function Logo() {
   }
 
   return (
-    <motion.img
-      variants={variants}
-      initial="hidden"
-      animate="show"
-      transition={{ duration: 0.8 }}
-      className={styles.logo}
-      src={logo} alt="Logo"/>
+    <Link to={'/'}>
+      <motion.img
+        variants={variants}
+        initial="hidden"
+        animate="show"
+        transition={{ duration: 0.8 }}
+        className={styles.logo}
+        src={logo} alt="Logo"/>
+    </Link>
   )
 }
 

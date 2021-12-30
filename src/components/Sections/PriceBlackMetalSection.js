@@ -4,6 +4,7 @@ import SectionTitle from "./SectionTitle"
 import TableRow from "../../TableRow"
 
 import aluET from '../../images/metals/alu-et.jpg'
+import TableMetal from "../TableMetal";
 
 function PriceBlackMetalSection() {
   return (
@@ -11,83 +12,73 @@ function PriceBlackMetalSection() {
       <div className="container">
         <SectionTitle title={'Цены на черный металлолом'} />
 
-        <table className={styles.table}>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Вид металла</th>
-              <th>Цена</th>
-            </tr>
-          </thead>
+        <TableMetal>
+          <TableRow
+            bgGrey
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-          <tbody>
-            <TableRow
-              bgGrey
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            bgGrey
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              bgGrey
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            bgGrey
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              bgGrey
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            bgGrey
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              bgGrey
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            bgGrey
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              bgGrey
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
+          <TableRow
+            bgGrey
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
 
-            <TableRow
-              bgGrey
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
-
-            <TableRow
-              img={aluET}
-              title={'Алюминий электротехнический'}
-              priceRozn={120} priseOpt={125} />
-          </tbody>
-        </table>
+          <TableRow
+            img={aluET}
+            title={'Алюминий электротехнический'}
+            priceRozn={120} priseOpt={125} />
+        </TableMetal>
       </div>
     </section>
   )

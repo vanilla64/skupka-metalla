@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom"
 import { ROUTES } from "../../constants/ROUTES"
 
 function HeaderNavigation() {
-  const { ABOUT, SERVICES } = ROUTES
+  const { ABOUT, SERVICES, DISMANTLING, PRICE, REVIEWS, VACANCY } = ROUTES
 
   return (
     <nav className={styles.navigation}>
@@ -16,7 +16,16 @@ function HeaderNavigation() {
           <NavLink className={styles.navLink} to={SERVICES}>Услуги</NavLink>
         </li>
         <li className={styles.listItem}>
-          <NavLink className={styles.navLink} to={ABOUT}>О компании</NavLink>
+          <NavLink className={styles.navLink} to={DISMANTLING}>Демонтаж</NavLink>
+        </li>
+        <li className={styles.listItem}>
+          <NavLink className={styles.navLink} to={PRICE}>Прайс-лист</NavLink>
+        </li>
+        <li className={styles.listItem}>
+          <NavLink className={styles.navLink} to={REVIEWS}>Отзывы</NavLink>
+        </li>
+        <li className={styles.listItem}>
+          <NavLink className={styles.navLink} to={VACANCY}>Вакансии</NavLink>
         </li>
       </ul>
     </nav>

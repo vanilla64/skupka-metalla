@@ -7,6 +7,10 @@
   flex-direction: column
   //justify-content: center
   align-items: center
+  @media screen and (max-width: 690px)
+    height: 750px
+  @media screen and (max-width: 425px)
+    height: 800px
 
 .subtitle
   text-align: center
@@ -14,7 +18,11 @@
   font-size: 16px
   font-weight: 400
   max-width: 750px
-
+  @media screen and (max-width: 760px)
+    width: 95%
+  @media screen and (max-width: 425px)
+    margin: 18px 0 50px
+    font-size: 12px
 .actions
   margin: 26px 0 0
   position: relative
@@ -30,6 +38,10 @@
     right: 0
     top: 50%
     z-index: 0
+    @media screen and (max-width: 690px)
+      display: none
+  @media screen and (max-width: 690px)
+    flex-direction: column
 
 .action
   position: relative
@@ -40,10 +52,23 @@
   align-items: flex-end
   &:first-child
     margin: 0 0 0 50px
+    @media screen and (max-width: 690px)
+      margin: 80px 0 50px
   &:last-child
     margin: 0 50px 0 0
+    @media screen and (max-width: 690px)
+      margin: 0
   &_pos_top
     align-items: flex-start
+    @media screen and (max-width: 690px)
+      align-items: center
+  @media screen and (max-width: 690px)
+    justify-content: flex-start
+    align-items: center
+    padding: 0 0 0 100px
+    margin: 0 0 50px
+  @media screen and (max-width: 425px)
+    padding: 0 0 0 70px
 
 .circle
   position: absolute
@@ -64,10 +89,20 @@
     top: calc( 50% - 12px )
     left: calc( 50% - 12px )
     background: #ff67cb
+  @media screen and (max-width: 690px)
+    left: 30px
+  @media screen and (max-width: 425px)
+    left: 15px
 
 .actionText
   font-size: 16px
   text-align: center
+  @media screen and (max-width: 690px)
+    text-align: left
+  @media screen and (max-width: 425px)
+    font-size: 12px
+
+
 
 .verticalLine
   position: absolute
@@ -88,6 +123,8 @@
   &_pos_top
     transform: rotate(180deg)
     top: 55px
+  @media screen and (max-width: 690px)
+    display: none
 
 .svgIcon
   position: absolute
@@ -95,4 +132,6 @@
   top: -32px
   &_pos_top
     top: 40px
+  @media screen and (max-width: 690px)
+    display: none
 

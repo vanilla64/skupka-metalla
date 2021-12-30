@@ -1,8 +1,18 @@
 .listItem
   display: flex
   margin: 0 0 14px
+  @media screen and (max-width: 480px)
+    flex-direction: column
+    align-items: center
+    margin: 0 0 24px
+    //svg
+    //  margin: 0
+
 
 .icon
+  margin: 0 16px 0 0
+  @media screen and (max-width: 480px)
+    margin: 0
 
 .textContainer
 
@@ -11,9 +21,16 @@
   font-weight: 700
   line-height: 21px
   color: #4241b8
+  @media screen and (max-width: 480px)
+    text-align: center
+    margin: 0 0 8px
+
 
 .text
   font-size: 18px
+  @media screen and (max-width: 480px)
+    text-align: center
+
 
 .price
   border-radius: 4px
