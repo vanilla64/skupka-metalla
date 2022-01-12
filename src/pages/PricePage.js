@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import MainLayout from "../layouts/MainLayout"
 import HomeSection from "../components/Sections/HomeSection"
 import WhyWeFirstSection from "../components/Sections/WhyWeFirstSection"
