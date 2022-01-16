@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/skupka-metalla/static/css/main.7f95b30a.chunk.css",
-    "main.js": "/skupka-metalla/static/js/main.5298c48e.chunk.js",
-    "main.js.map": "/skupka-metalla/static/js/main.5298c48e.chunk.js.map",
+    "main.css": "/skupka-metalla/static/css/main.5ab042b8.chunk.css",
+    "main.js": "/skupka-metalla/static/js/main.a4dcfd34.chunk.js",
+    "main.js.map": "/skupka-metalla/static/js/main.a4dcfd34.chunk.js.map",
     "runtime-main.js": "/skupka-metalla/static/js/runtime-main.5921edb7.js",
     "runtime-main.js.map": "/skupka-metalla/static/js/runtime-main.5921edb7.js.map",
-    "static/js/2.1bdf73a5.chunk.js": "/skupka-metalla/static/js/2.1bdf73a5.chunk.js",
-    "static/js/2.1bdf73a5.chunk.js.map": "/skupka-metalla/static/js/2.1bdf73a5.chunk.js.map",
+    "static/js/2.2f2f1bbb.chunk.js": "/skupka-metalla/static/js/2.2f2f1bbb.chunk.js",
+    "static/js/2.2f2f1bbb.chunk.js.map": "/skupka-metalla/static/js/2.2f2f1bbb.chunk.js.map",
     "index.html": "/skupka-metalla/index.html",
-    "static/css/main.7f95b30a.chunk.css.map": "/skupka-metalla/static/css/main.7f95b30a.chunk.css.map",
-    "static/js/2.1bdf73a5.chunk.js.LICENSE.txt": "/skupka-metalla/static/js/2.1bdf73a5.chunk.js.LICENSE.txt",
+    "static/css/main.5ab042b8.chunk.css.map": "/skupka-metalla/static/css/main.5ab042b8.chunk.css.map",
+    "static/js/2.2f2f1bbb.chunk.js.LICENSE.txt": "/skupka-metalla/static/js/2.2f2f1bbb.chunk.js.LICENSE.txt",
     "static/media/HomeSection.module.sass": "/skupka-metalla/static/media/1.1db6f30b.jpg",
     "static/media/1.32309361.jpg": "/skupka-metalla/static/media/1.32309361.jpg",
     "static/media/1.41b6929b.jpg": "/skupka-metalla/static/media/1.41b6929b.jpg",
@@ -30,6 +30,7 @@
     "static/media/alu-et.2e6a4c68.jpg": "/skupka-metalla/static/media/alu-et.2e6a4c68.jpg",
     "static/media/chermet.2b586e69.png": "/skupka-metalla/static/media/chermet.2b586e69.png",
     "static/media/demontaj.65ec9daa.png": "/skupka-metalla/static/media/demontaj.65ec9daa.png",
+    "static/media/SpecialOfferPopup.module.sass": "/skupka-metalla/static/media/form_bg_1.42f2b2c0.png",
     "static/media/logo-black.7089088a.svg": "/skupka-metalla/static/media/logo-black.7089088a.svg",
     "static/media/logo-circle.cfda0eb5.png": "/skupka-metalla/static/media/logo-circle.cfda0eb5.png",
     "static/media/mservice-logo.d07eee97.svg": "/skupka-metalla/static/media/mservice-logo.d07eee97.svg",
@@ -42,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5921edb7.js",
-    "static/js/2.1bdf73a5.chunk.js",
-    "static/css/main.7f95b30a.chunk.css",
-    "static/js/main.5298c48e.chunk.js"
+    "static/js/2.2f2f1bbb.chunk.js",
+    "static/css/main.5ab042b8.chunk.css",
+    "static/js/main.a4dcfd34.chunk.js"
   ]
 }
