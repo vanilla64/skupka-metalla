@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import MainLayout from "../layouts/MainLayout"
 import HomeSection from "../components/Sections/HomeSection"
 import WhatWeDoSection from "../components/Sections/WhatWeDoSection"
@@ -14,8 +14,18 @@ import BecomeOurClient from "../components/Sections/BecomeOurClient"
 import PartnersSection from "../components/Sections/PartnersSection"
 import ReviewsSection from "../components/Sections/ReviewsSection"
 import TablePriceSection from "../components/Sections/TablePriceSection"
+import AppContext from "../contexts/AppContext"
 
 function MainPage() {
+  const { setIsSpecialOfferPopup } = useContext(AppContext)
+
+  useEffect(() => {
+    setTimeout(() => {
+        setIsSpecialOfferPopup(true)
+    }, 5000)
+      // eslint-disable-next-line
+  }, [])
+
   return (
     <MainLayout>
       <HomeSection />

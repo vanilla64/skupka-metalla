@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import styles from './styles/App.module.sass'
 import { Routes, Route } from 'react-router-dom'
 import MainPage from "./pages/MainPage"
@@ -11,6 +11,7 @@ import VacancyPage from "./pages/VacancyPage"
 import ContactsPage from "./pages/ContactsPage"
 import PricePage from "./pages/PricePage"
 import AppContext from "./contexts/AppContext"
+import SpecialOfferPopup from "./components/SpecialOfferPopup";
 
 function App() {
   // useEffect(() => {
@@ -19,6 +20,9 @@ function App() {
   // }, [])
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isCalculationPopupOpen, setIsCalculationPopupOpen] = useState(false)
+  const [isSpecialOfferPopup, setIsSpecialOfferPopup] = useState(false)
+  const [calculatedData, setCalculatedData] = useState(0)
   const [metalGroup, setMetalGroup] = useState('чёрный металл')
 
   const { MAIN, ABOUT, SERVICES, DISMANTLING, REVIEWS, VACANCY, PRICE, CONTACTS } = ROUTES
@@ -26,8 +30,14 @@ function App() {
   const appValues = {
     isMobileMenuOpen,
     setIsMobileMenuOpen,
+    isCalculationPopupOpen,
+    setIsCalculationPopupOpen,
+    isSpecialOfferPopup,
+    setIsSpecialOfferPopup,
     metalGroup,
     setMetalGroup,
+    calculatedData,
+    setCalculatedData,
   }
 
   return (
