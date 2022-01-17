@@ -1,6 +1,8 @@
 export const CONTACTS = {
   PHONES: {
-    MOB: '+7 999 99-99',
-    CITY: '+7 888 88-88',
-  }
+    MOB: '+7 (991) 777-78-95',
+    CITY: '+7 (800) 550-53-83',
+  },
+
+  EMAIL: 'standart-lom@inbox.ru',
 }

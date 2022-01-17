@@ -5,7 +5,8 @@ import Footer from "../components/Footer/Footer"
 import FixedMenu from "../components/FixedMenu/FixedMenu"
 import PopupMenu from "../components/PopupMenu"
 import PriceCalculationPopup from "../components/PriceCalculationPopup"
-import SpecialOfferPopup from "../components/SpecialOfferPopup";
+import SpecialOfferPopup from "../components/SpecialOfferPopup"
+import Toast from "../components/Toast"
 
 function MainLayout({ children }) {
   return (
@@ -19,6 +20,7 @@ function MainLayout({ children }) {
       <Footer />
       <PriceCalculationPopup />
       <SpecialOfferPopup />
+      <Toast />
     </>
   )
 }

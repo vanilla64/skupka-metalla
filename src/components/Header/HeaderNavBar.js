@@ -3,6 +3,7 @@ import styles from "../../styles/Header.module.sass"
 import Logo from "../Logo"
 import HeaderNavigation from "./HeaderNavigation"
 import Phones from "./Phones"
+import HeaderBurger from "./HeaderBurger"
 
 function HeaderNavBar() {
   return (
@@ -12,6 +13,7 @@ function HeaderNavBar() {
           <Logo />
           <HeaderNavigation />
           <Phones />
+          <HeaderBurger />
         </div>
       {/*</div>*/}
     </div>

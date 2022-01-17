@@ -1,0 +1,53 @@
+.burger
+  position: relative
+  width: 80px
+  height: 80px
+  //background: #156cfd
+  display: none
+  transition: .3s
+  &_active
+    display: flex
+    justify-content: center
+    align-items: center
+    div
+      display: none
+  @media screen and (max-width: 960px)
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    right: 0
+  div
+    width: 40px
+    border: 1px solid #fff
+  //@media screen and (max-width: 768px)
+  //  position: absolute
+  //  right: 0
+  &:before
+    content: ''
+    position: absolute
+    top: 30px
+    left: 20px
+    width: 40px
+    height: 2px
+    background: #ffffff
+    transition: .3s
+  &:after
+    content: ''
+    position: absolute
+    bottom: 30px
+    left: 20px
+    width: 40px
+    height: 2px
+    background: #ffffff
+    transition: .3s
+
+.burger_active:before
+  transform: rotate(45deg)
+  transform-origin: center
+  top: 35px
+
+.burger_active:after
+  transform: rotate(-45deg)
+  transform-origin: center
+  bottom: 42px

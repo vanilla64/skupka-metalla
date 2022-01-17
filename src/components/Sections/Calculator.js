@@ -27,21 +27,15 @@ function Calculator() {
 
   const onSubmit = evt => {
     evt.preventDefault()
+
     const notSubmit = typeOfMetal === 'default' || category === 'default' || typeOfPrice === 'default' || needExport === 'default'
     const exportPrice = 2000
-
     let totalPrice
 
     if (notSubmit) return console.log('NOT SUBMIT')
 
-
-    console.log(notSubmit)
-
-    console.log(category)
-    console.log(typeof priceList[typeOfMetal][category][typeOfPrice])
-
     totalPrice = priceList[typeOfMetal][category][typeOfPrice] * weight
-    console.log('Result is ' + totalPrice)
+    // console.log('Result is ' + totalPrice)
 
     setCalculatedData(totalPrice)
     setIsCalculationPopupOpen(true)
@@ -86,7 +80,8 @@ function Calculator() {
 
               {
                 typeOfMetal === 'cuprum' &&
-                  <><option value="default">Выбрать категорию</option>
+                  <>
+                    <option value="default">Выбрать категорию</option>
                     <option value="glitter">Медь а1-1 (блеск)</option>
                     <option value="cable">Медь (шина)</option>
                     <option value="piece">Медь а1-2 (кусок)</option>

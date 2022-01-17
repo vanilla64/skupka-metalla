@@ -3,7 +3,7 @@ import styles from "../../styles/ButtonContactUs.module.sass"
 
 function ButtonContactUs() {
   return (
-    <button className={styles.button}>
+    <button type="submit" className={styles.button}>
       <div />
       <span>Узнать цену</span>
     </button>

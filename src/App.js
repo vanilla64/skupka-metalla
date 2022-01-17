@@ -22,6 +22,8 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isCalculationPopupOpen, setIsCalculationPopupOpen] = useState(false)
   const [isSpecialOfferPopup, setIsSpecialOfferPopup] = useState(false)
+  const [isToastOpen, setIsToastOpen] = useState(false)
+  const [isBurgerActive, setIsBurgerActive] = useState(false)
   const [calculatedData, setCalculatedData] = useState(0)
   const [metalGroup, setMetalGroup] = useState('чёрный металл')
 
@@ -34,6 +36,10 @@ function App() {
     setIsCalculationPopupOpen,
     isSpecialOfferPopup,
     setIsSpecialOfferPopup,
+    isToastOpen,
+    setIsToastOpen,
+    isBurgerActive,
+    setIsBurgerActive,
     metalGroup,
     setMetalGroup,
     calculatedData,

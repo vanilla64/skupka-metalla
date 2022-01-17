@@ -25,8 +25,8 @@ function Phones() {
       transition={{ duration: 0.7, delay: 0.3 }}
       className={styles.phones}
     >
-      <p className={styles.text}>{ MOB }</p>
-      <p className={styles.text}>{ CITY }</p>
+      <a href={`tel:${MOB}`} className={styles.link}>{ MOB }</a>
+      <a href={`tel:${CITY}`} className={styles.link}>{ CITY }</a>
     </motion.div>
   )
 }
