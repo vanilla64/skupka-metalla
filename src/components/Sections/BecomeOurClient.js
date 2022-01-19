@@ -78,7 +78,7 @@ function BecomeOurClient() {
               Напишите в
               <span className={styles.chat}> Онлайн чат</span>,
               <span className={styles.whatsApp}> Whats App</span>,
-              <span className={styles.telegram}> Telegram</span>
+              <span className={styles.telegram}> Viber</span>
             </p>
             <motion.div
               variants={variants.container}
@@ -97,13 +97,13 @@ function BecomeOurClient() {
                 // initial="hidden"
                 // whileInView="show"
                 // transition={{ duration: 0.6 }}
-                className={`${styles.link} ${styles.link_bg_green}`} href="/">Whats App</motion.a>
+                className={`${styles.link} ${styles.link_bg_green}`} href="https://api.whatsapp.com/send?phone=+79917777895&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20skupka-metalloloma.com" target="_blank">Whats App</motion.a>
               <motion.a
                 variants={variants.item}
                 // initial="hidden"
                 // whileInView="show"
                 // transition={{ duration: 0.6 }}
-                className={`${styles.link} ${styles.link_bg_blue}`} href="/">Telegram</motion.a>
+                className={`${styles.link} ${styles.link_bg_blue}`} href="viber://chat?number=%2B79917777895">Viber</motion.a>
             </motion.div>
           </motion.div>
         </div>

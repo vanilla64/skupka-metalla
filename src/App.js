@@ -11,7 +11,7 @@ import VacancyPage from "./pages/VacancyPage"
 import ContactsPage from "./pages/ContactsPage"
 import PricePage from "./pages/PricePage"
 import AppContext from "./contexts/AppContext"
-import SpecialOfferPopup from "./components/SpecialOfferPopup";
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 function App() {
   // useEffect(() => {
@@ -45,6 +45,16 @@ function App() {
     calculatedData,
     setCalculatedData,
   }
+
+  // disable body scroll when burger menu open
+  useEffect(() => {
+    const menu = document.querySelector('#burgerMenu')
+
+    if (isBurgerActive || isMobileMenuOpen) return disableBodyScroll(menu)
+    return enableBodyScroll(menu)
+
+  }, [isBurgerActive, isMobileMenuOpen])
+  //
 
   return (
     <div className={styles.app}>

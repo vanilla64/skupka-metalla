@@ -44,7 +44,7 @@ function PopupMenu() {
   }
 
   return (
-    <section className={classes.section}>
+    <section id={'burgerMenu'} className={classes.section}>
       <div className={styles.wrapper}>
         <nav>
           <motion.ul

@@ -7,7 +7,6 @@ function AboutUsSection({ children }) {
       <div className="container">
         { children }
       </div>
-
     </section>
   )
 }

@@ -67,7 +67,7 @@ function HomeSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
               className={styles.infoText}>
-              <a className={styles.infoLink} href="/">Бесплатный</a> вывоз и демонтаж в день обращения
+              <a className={styles.infoLink} href="/">Бесплатный</a> вывоз и демонтаж от 1 тонны
             </motion.p>
 
             <motion.div
