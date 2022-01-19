@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/skupka-metalla/static/css/main.0b58c455.chunk.css",
-    "main.js": "/skupka-metalla/static/js/main.83fb649f.chunk.js",
-    "main.js.map": "/skupka-metalla/static/js/main.83fb649f.chunk.js.map",
+    "main.css": "/skupka-metalla/static/css/main.60bdf3ae.chunk.css",
+    "main.js": "/skupka-metalla/static/js/main.5cbc2dc5.chunk.js",
+    "main.js.map": "/skupka-metalla/static/js/main.5cbc2dc5.chunk.js.map",
     "runtime-main.js": "/skupka-metalla/static/js/runtime-main.5921edb7.js",
     "runtime-main.js.map": "/skupka-metalla/static/js/runtime-main.5921edb7.js.map",
-    "static/js/2.639f1dcf.chunk.js": "/skupka-metalla/static/js/2.639f1dcf.chunk.js",
-    "static/js/2.639f1dcf.chunk.js.map": "/skupka-metalla/static/js/2.639f1dcf.chunk.js.map",
+    "static/js/2.a3041662.chunk.js": "/skupka-metalla/static/js/2.a3041662.chunk.js",
+    "static/js/2.a3041662.chunk.js.map": "/skupka-metalla/static/js/2.a3041662.chunk.js.map",
     "index.html": "/skupka-metalla/index.html",
-    "static/css/main.0b58c455.chunk.css.map": "/skupka-metalla/static/css/main.0b58c455.chunk.css.map",
-    "static/js/2.639f1dcf.chunk.js.LICENSE.txt": "/skupka-metalla/static/js/2.639f1dcf.chunk.js.LICENSE.txt",
+    "static/css/main.60bdf3ae.chunk.css.map": "/skupka-metalla/static/css/main.60bdf3ae.chunk.css.map",
+    "static/js/2.a3041662.chunk.js.LICENSE.txt": "/skupka-metalla/static/js/2.a3041662.chunk.js.LICENSE.txt",
     "static/media/HomeSection.module.sass": "/skupka-metalla/static/media/1.1db6f30b.jpg",
     "static/media/1.32309361.jpg": "/skupka-metalla/static/media/1.32309361.jpg",
     "static/media/1.41b6929b.jpg": "/skupka-metalla/static/media/1.41b6929b.jpg",
@@ -43,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5921edb7.js",
-    "static/js/2.639f1dcf.chunk.js",
-    "static/css/main.0b58c455.chunk.css",
-    "static/js/main.83fb649f.chunk.js"
+    "static/js/2.a3041662.chunk.js",
+    "static/css/main.60bdf3ae.chunk.css",
+    "static/js/main.5cbc2dc5.chunk.js"
   ]
 }
