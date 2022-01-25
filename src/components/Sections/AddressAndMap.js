@@ -24,9 +24,9 @@ function AddressAndMap() {
             <a className={styles.mapLink} href="https://tinyurl.com/ttzck6s" target="_blank" rel="noreferrer">Google Maps</a>
           </div>
         </div>
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3cde61a32b3b52913f23d547f2cdbe40f019313d723d51c8811e5b2b7c04cfd&amp;amp;source=constructor"
-            width="60%" height="400" frameBorder="0"></iframe>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A89a5da8af904437a3ea915825ad68813a6121f28d32d33d22ae789fc93125357&amp;source=constructor"
+          width="60%" height="400" frameBorder="0"></iframe>
       </div>
     </div>
   )

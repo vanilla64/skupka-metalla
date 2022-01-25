@@ -22,6 +22,8 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isCalculationPopupOpen, setIsCalculationPopupOpen] = useState(false)
   const [isSpecialOfferPopup, setIsSpecialOfferPopup] = useState(false)
+  const [isFixedPopupOpen, setIsFixedPopupOpen] = useState(false)
+  const [isPopupWithMessage, setIsPopupWithMessage] = useState(false)
   const [isToastOpen, setIsToastOpen] = useState(false)
   const [isBurgerActive, setIsBurgerActive] = useState(false)
   const [calculatedData, setCalculatedData] = useState(0)
@@ -36,6 +38,10 @@ function App() {
     setIsCalculationPopupOpen,
     isSpecialOfferPopup,
     setIsSpecialOfferPopup,
+    isFixedPopupOpen,
+    setIsFixedPopupOpen,
+    isPopupWithMessage,
+    setIsPopupWithMessage,
     isToastOpen,
     setIsToastOpen,
     isBurgerActive,

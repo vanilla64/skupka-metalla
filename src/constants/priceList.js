@@ -1,25 +1,25 @@
 export const priceList = {
   black: {
     blackMetal: {
-      opt: 24,
-      roz: 23,
+      opt: 25,
+      roz: 25,
     },
 
     castIron: {
-      opt: 24,
-      roz: 23,
+      opt: 25,
+      roz: 25,
     },
 
     autoMet: {
-      opt: 22,
-      roz: 22,
+      opt: 24,
+      roz: 24,
     }
   },
 
   cuprum: {
     glitter: {
-      opt: 640,
-      roz: 630,
+      opt: 680,
+      roz: 660,
     },
 
     cable: {
@@ -28,33 +28,33 @@ export const priceList = {
     },
 
     piece: {
-      opt: 630,
-      roz: 620,
+      opt: 670,
+      roz: 650,
     },
 
     random: {
-      opt: 620,
-      roz: 610,
+      opt: 660,
+      roz: 640,
     },
 
     brass: {
-      opt: '',
-      roz: '',
+      opt: 350,
+      roz: 340,
     },
 
     brasShavings: {
-      opt: 320,
-      roz: 300,
+      opt: 260,
+      roz: 250,
     },
 
     radiators: {
-      opt: 310,
-      roz: 300,
+      opt: 360,
+      roz: 350,
     },
 
     bronze: {
-      opt: 330,
-      roz: 300,
+      opt: 370,
+      roz: 360,
     }
   },
 

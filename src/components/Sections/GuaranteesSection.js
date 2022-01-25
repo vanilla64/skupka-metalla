@@ -40,7 +40,7 @@ function GuaranteesSection() {
           icon={<ClipboardCheckIconBig />} />
         <GuaranteesCard
           title={'Профессиональные бригады'}
-          text={'Штат из более 150 профессиональных рабочих по демонтажу и вывозу металлолома.'}
+          text={'Штат профессиональных рабочих по демонтажу и вывозу металлолома.'}
           icon={<ThumbsUpIcon />} />
         <GuaranteesCard
           title={'Отзывы клиентов'}

@@ -1,16 +1,16 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styles from '../../styles/FixedMenu.module.sass'
-import logo from '../../images/logo-circle.png'
+// import logo from '../../images/logo-circle.png'
 import WhatsappIcon from "../icons/WhatsappIcon"
 import GeoIcon from "../icons/GeoIcon"
 import TelephoneIcon from "../icons/TelephoneIcon"
 import EnvelopeIcon from "../icons/EnvelopeIcon"
-import AppContext from "../../contexts/AppContext"
+// import AppContext from "../../contexts/AppContext"
 
 function FixedMenu() {
-  const { setIsMobileMenuOpen } = useContext(AppContext)
+  // const { setIsMobileMenuOpen } = useContext(AppContext)
 
-  const onMenuClick = () => setIsMobileMenuOpen(prev => !prev)
+  // const onMenuClick = () => setIsMobileMenuOpen(prev => !prev)
 
   return (
     <section className={styles.fixedMenu}>
@@ -31,11 +31,11 @@ function FixedMenu() {
         <TelephoneIcon />
       </a>
 
-      <img
-        onClick={onMenuClick}
-        className={styles.logo}
-        src={logo}
-        alt="Menu"/>
+      {/*<img*/}
+      {/*  onClick={onMenuClick}*/}
+      {/*  className={styles.logo}*/}
+      {/*  src={logo}*/}
+      {/*  alt="Menu"/>*/}
 
       <a
         style={{ margin: '0 0 0 10px' }}

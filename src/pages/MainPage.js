@@ -17,12 +17,16 @@ import TablePriceSection from "../components/Sections/TablePriceSection"
 import AppContext from "../contexts/AppContext"
 
 function MainPage() {
-  const { setIsSpecialOfferPopup } = useContext(AppContext)
+  const { setIsSpecialOfferPopup, setIsFixedPopupOpen } = useContext(AppContext)
 
   useEffect(() => {
     setTimeout(() => {
         setIsSpecialOfferPopup(true)
     }, 5000)
+
+    setTimeout(() => {
+      setIsFixedPopupOpen(true)
+    }, 10000)
       // eslint-disable-next-line
   }, [])
 

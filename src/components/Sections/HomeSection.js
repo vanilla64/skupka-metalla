@@ -70,6 +70,14 @@ function HomeSection() {
               <a className={styles.infoLink} href="/">Бесплатный</a> вывоз и демонтаж от 1 тонны
             </motion.p>
 
+            <motion.p
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+              className={styles.infoText}>
+              <a className={styles.infoLink} href="/">Дорого</a> скупаем любой кабель
+            </motion.p>
+
             <motion.div
               className={styles.button}
               initial={{ opacity: 0, y: 50 }}

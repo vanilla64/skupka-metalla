@@ -4,13 +4,21 @@ import styles from '../styles/PopupMenu.module.sass'
 import AppContext from "../contexts/AppContext"
 import { ROUTES } from "../constants/ROUTES"
 import { motion } from "framer-motion"
+import { enableBodyScroll } from "body-scroll-lock"
 
 function PopupMenu() {
-  const { isMobileMenuOpen, setIsMobileMenuOpen } = useContext(AppContext)
+  const { isMobileMenuOpen, setIsMobileMenuOpen, setIsBurgerActive } = useContext(AppContext)
 
   const { MAIN, ABOUT, SERVICES, DISMANTLING, PRICE, REVIEWS, VACANCY } = ROUTES
 
-  const onLinkClick = () => setIsMobileMenuOpen(prev => !prev)
+  const onLinkClick = () => {
+    const menu = document.querySelector('#burgerMenu')
+
+    setIsMobileMenuOpen(prev => !prev)
+    setIsBurgerActive(prev => !prev)
+
+    enableBodyScroll(menu)
+  }
 
   const classes = {
     section: isMobileMenuOpen

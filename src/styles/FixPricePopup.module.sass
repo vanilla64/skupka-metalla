@@ -1,0 +1,125 @@
+.fixPricePopup
+  width: 400px
+  //height: 500px
+  position: fixed
+  right: -120%
+  bottom: 50px
+  background: #4241b8
+  border-radius: 10px
+  //overflow: hidden
+  padding: 30px
+  transition: .3s
+  visibility: hidden
+  opacity: 0
+  &_active
+    right: 30px
+    bottom: 50px
+    visibility: visible
+    opacity: 1
+    @media screen and (max-width: 425px)
+      padding: 20px 10px 10px
+      overflow: scroll
+      width: 100%
+      height: calc( 100vh - 200px )
+      right: 0
+      bottom: 68px
+
+
+.title
+  color: #fff
+  font-size: 20px
+  font-weight: 700
+  line-height: 24px
+  margin-bottom: 10px
+  text-align: center
+
+.phones
+  padding: 0 0 14px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.phone
+  color: #ff9d02
+  font-size: 16px
+  font-weight: 600
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.table
+  width: 100%
+  border-radius: 8px
+  border-collapse: collapse
+  thead
+    background: #000
+    font-size: 14px
+    th
+      color: #fff
+      overflow: hidden
+      background: #5554bf
+      font-weight: 600
+      &:first-child
+        border-radius: 4px 0 0
+      &:last-child
+        border-radius: 0 4px 0 0
+  tr
+    background: #4c4bbc
+    &:nth-child(2n)
+      background: #5554bf
+    &:last-child
+      overflow: hidden
+  th
+    color: #fff
+    font-size: 12px
+    font-weight: 300
+    text-align: left
+    padding: 6px 6px 6px 14px
+    &:first-child
+      border-radius: 0 0 0 4px
+    &:last-child
+      display: flex
+      align-items: center
+      border-radius: 0 0 4px 0
+
+.buttonPrice
+  cursor: pointer
+  margin: 18px 0 0
+  width: 100%
+  padding: 8px 10px
+  background: linear-gradient(90deg, #ff67cb 0, #ff9d02 51%, #ff67cb)
+  outline: none
+  border: none
+  border-radius: 4px
+  color: #fff
+  font-weight: 600
+  transition: .3s
+  &:hover
+    transition: .3s
+    background: linear-gradient(90deg, #ff9d02 0, #ff67cb 51%, #ff9d02)
+
+.closeLine
+  width: 40px
+  height: 4px
+  border-radius: 14px
+  background: #fff
+  position: absolute
+  top: 10px
+  left: calc( 50% - 20px )
+  display: none
+  @media screen and (max-width: 425px)
+    display: block
+
+.closeIcon
+  position: absolute
+  top: -7px
+  right: -7px
+  cursor: pointer
+  transition: .2s
+  &:hover
+    opacity: .8
+  @media screen and (max-width: 425px)
+    display: none
+    top: 10px
+    right: 0
+    z-index: 999

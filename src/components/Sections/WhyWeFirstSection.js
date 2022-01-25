@@ -55,7 +55,7 @@ function WhyWeFirstSection() {
             <WhyWeFirstCard
               icon={<PeopleIcon />}
               title={'Команда'}
-              text={'Наши бригады работают с строгими саблюдениями техники безопасности'} />
+              text={'Наши бригады работают с строгими соблюдениями техники безопасности'} />
 
             <WhyWeFirstCard
               icon={<TruckOrange />}
@@ -65,7 +65,7 @@ function WhyWeFirstSection() {
             <WhyWeFirstCard
               icon={<TruckBigOrange />}
               title={'Техника'}
-              text={'Наш автопарк состит из более чем 150 единиц техники'} />
+              text={'Собственный автопарк с большим количеством техники'} />
           </motion.ul>
         </div>
       </div>

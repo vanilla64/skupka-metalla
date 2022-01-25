@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from '../../styles/sections/BecomeOurClient.module.sass'
 import phoneChatImg from '../../images/phone_chat.png'
 import { motion } from "framer-motion"
+import AppContext from "../../contexts/AppContext"
 
 function BecomeOurClient() {
+  const { setIsPopupWithMessage } = useContext(AppContext)
+
   const variants = {
     img: {
       hidden: {
@@ -54,6 +57,8 @@ function BecomeOurClient() {
     }
   }
 
+  const onMailClick = () => setIsPopupWithMessage(true)
+
   return (
     <section className={styles.section}>
       <div className="container">
@@ -71,12 +76,12 @@ function BecomeOurClient() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className={styles.textContent}>
             <h3 className={styles.title}>Станьте нашим клиентом!</h3>
-            <a className={styles.phone} href={'tel:+7 (999) 99 99'}>+7 (999) 999-99-99</a>
+            <a className={styles.phone} href={'tel:+7 (991) 777-78-95'}>+7 (991) 777-78-95</a>
             <h3 className={styles.title}>Не хотите звонить?</h3>
             <p
               className={styles.text}>
               Напишите в
-              <span className={styles.chat}> Онлайн чат</span>,
+              <span className={styles.chat}> Почта</span>,
               <span className={styles.whatsApp}> Whats App</span>,
               <span className={styles.telegram}> Viber</span>
             </p>
@@ -86,12 +91,13 @@ function BecomeOurClient() {
               whileInView="show"
               transition={{ duration: 0.6 }}
               className={styles.links}>
-              <motion.a
+              <motion.div
+                onClick={onMailClick}
                 variants={variants.item}
                 // initial="hidden"
                 // whileInView="show"
                 // transition={{ duration: 0.6 }}
-                className={`${styles.link} ${styles.link_bg_orange}`} href="/">Онлайн чат</motion.a>
+                className={`${styles.link} ${styles.link_bg_orange}`}>Почта</motion.div>
               <motion.a
                 variants={variants.item}
                 // initial="hidden"

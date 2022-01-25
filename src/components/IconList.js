@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from '../styles/IconList.module.sass'
-import TelegramIcon from "./icons/TelegramIcon"
 import { motion } from "framer-motion"
+import TelephoneFillIcon from "./icons/TelephoneFillIcon"
+import WhatsappMainScreenIcon from "./icons/WhatsappMainScreenIcon"
+import MailFillIcon from "./icons/MailFillIcon"
+import PhoneVibrateIcon from "./icons/PhoneVibrateIcon"
+import AppContext from "../contexts/AppContext"
 
 function IconList() {
+  const { setIsPopupWithMessage } = useContext(AppContext)
+
   const container = {
     hidden: {
       opacity: 0
@@ -28,6 +34,8 @@ function IconList() {
     }
   }
 
+  const onMailClick = () => setIsPopupWithMessage(true)
+
   return (
     <motion.ul
       variants={container}
@@ -35,22 +43,19 @@ function IconList() {
       animate="show"
       className={styles.list}>
       <motion.li variants={item}>
-        <TelegramIcon/>
+        <a href="tel:+7 (800) 550-53-83"> <TelephoneFillIcon /> </a>
       </motion.li>
       <motion.li variants={item}>
-        <TelegramIcon/>
+        <a href="tel:+7 (991) 777-78-95"> <PhoneVibrateIcon /> </a>
       </motion.li>
       <motion.li variants={item}>
-        <TelegramIcon/>
+        <a
+          href="https://api.whatsapp.com/send?phone=+79917777895&text=Здравствуйте! Пишу вам с сайта skupka-metalloloma.com">
+          <WhatsappMainScreenIcon />
+        </a>
       </motion.li>
-      <motion.li variants={item}>
-        <TelegramIcon/>
-      </motion.li>
-      <motion.li variants={item}>
-        <TelegramIcon/>
-      </motion.li>
-      <motion.li variants={item}>
-        <TelegramIcon/>
+      <motion.li onClick={onMailClick} variants={item}>
+        <a href="#"> <MailFillIcon /> </a>
       </motion.li>
     </motion.ul>
   )

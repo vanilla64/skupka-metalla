@@ -12,7 +12,7 @@ function BestOfferList() {
       <BestOfferListItem title={'Цена'} img={<CashStackIcon />} text={'Черный металлолом до '} price={'32000 ₽ / т.'} />
       <BestOfferListItem title={'Бесплатные услуги'} img={<ExchangeIcon />} text={'Вывоз и демонтаж металлолома от 1 тонны бесплатный.'} />
       <BestOfferListItem title={'Оплата'} img={<CreditCardIcon />} text={'Наличные, безнал, по договору для юр. лиц'} />
-      <BestOfferListItem title={'Автопарк'} img={<TruckIcon />} text={'Более 200 единц техники для вывоза и демонтажа'} />
+      <BestOfferListItem title={'Автопарк'} img={<TruckIcon />} text={'Собственные парк техники для вывоза и демонтажа'} />
     </ul>
   )
 }

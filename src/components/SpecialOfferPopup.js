@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react'
 import styles from '../styles/SpecialOfferPopup.module.sass'
 import AppContext from "../contexts/AppContext"
-import {send} from "@emailjs/browser";
+import { send } from "@emailjs/browser"
+import CloseIcon from "./icons/CloseIcon"
 
 function SpecialOfferPopup() {
   const { isSpecialOfferPopup, setIsSpecialOfferPopup, setIsToastOpen } = useContext(AppContext)
@@ -17,6 +18,7 @@ function SpecialOfferPopup() {
   }
 
   const onOverlayClick = () => setIsSpecialOfferPopup(false)
+  const onCloseClick = () => setIsSpecialOfferPopup(false)
 
   const onChange = evt => {
     const { name, value } = evt.target
@@ -61,10 +63,24 @@ function SpecialOfferPopup() {
         </h3>
 
         <form onSubmit={onSubmit} className={styles.form}>
-          <input onChange={onChange} name="name" value={values.name} type="text" placeholder={'Имя'}/>
-          <input onChange={onChange} name="phone" value={values.phone} type="phone" placeholder={'+7 (___)-__-__'}/>
+          <input
+            onChange={onChange}
+            name="name"
+            value={values.name}
+            type="text"
+            placeholder={'Имя'}/>
+          <input
+            onChange={onChange}
+            name="phone"
+            value={values.phone}
+            type="phone"
+            placeholder={'+7 (___)-__-__'}/>
           <button>Оставить заявку</button>
         </form>
+
+        <div onClick={onCloseClick} className={styles.closeBtn}>
+          <CloseIcon />
+        </div>
       </div>
     </section>
   )

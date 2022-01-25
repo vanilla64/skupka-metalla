@@ -9,18 +9,18 @@ function BlackMetalTable() {
         bgGrey
         img={aluET}
         title={'Чёрный металл'}
-        priceRozn={23} priseOpt={24} />
+        priceRozn={25} priseOpt={25} />
 
       <TableRow
         img={aluET}
         title={'Чугун'}
-        priceRozn={23} priseOpt={24} />
+        priceRozn={25} priseOpt={25} />
 
       <TableRow
         bgGrey
         img={aluET}
         title={'Лом автомобиля'}
-        priceRozn={22} priseOpt={22} weight={' тонна'} />
+        priceRozn={24} priseOpt={24} weight={' руб/тонна'} />
     </>
   )
 }
