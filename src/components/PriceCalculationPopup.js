@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import styles from '../styles/PriceCalculationPopup.module.sass'
 import AppContext from "../contexts/AppContext"
 import {send} from "@emailjs/browser";
+import ErrorToast from './ErrorToast'
 
 function PriceCalculationPopup() {
   const { isCalculationPopupOpen, calculatedData, setIsCalculationPopupOpen, setIsToastOpen } = useContext(AppContext)
@@ -10,7 +11,8 @@ function PriceCalculationPopup() {
     name: '',
     phone: '',
   })
-
+  const [msg,setMsg] = useState("")
+  const [isErrorToastOpen,setIsErrorToastOpen] = useState(false)
   const classes = {
     section: isCalculationPopupOpen
       ? `${styles.section} ${styles.section_active}`
@@ -24,7 +26,14 @@ function PriceCalculationPopup() {
 
   const onSubmit = evt => {
     evt.preventDefault()
-
+    if (values.name === "" || values.phone === ""){
+      setMsg("Пожалуйста заполните все поля")
+      setIsErrorToastOpen(true)
+      setTimeout(() => {
+        setIsErrorToastOpen(false)
+      }, 1500)
+    }
+    else {
     send(
       'service_h9d8ifl',
       'template_s4hqftf',
@@ -49,6 +58,7 @@ function PriceCalculationPopup() {
       }, function(error) {
         console.log('FAILED...', error)
       })
+    }
   }
 
   const onOverlayClick = () => setIsCalculationPopupOpen(false)
@@ -67,6 +77,7 @@ function PriceCalculationPopup() {
           <button type="submit">Отправить</button>
         </form>
       </div>
+      <ErrorToast msg={msg} isErrorToastOpen={isErrorToastOpen} />
     </section>
   )
 }

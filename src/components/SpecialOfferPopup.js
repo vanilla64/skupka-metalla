@@ -3,14 +3,15 @@ import styles from '../styles/SpecialOfferPopup.module.sass'
 import AppContext from "../contexts/AppContext"
 import { send } from "@emailjs/browser"
 import CloseIcon from "./icons/CloseIcon"
-
+import ErrorToast from './ErrorToast'
 function SpecialOfferPopup() {
   const { isSpecialOfferPopup, setIsSpecialOfferPopup, setIsToastOpen } = useContext(AppContext)
   const [values, setValues] = useState({
     name: '',
     phone: '',
   })
-
+  const [msg,setMsg] = useState("")
+  const [isErrorToastOpen,setIsErrorToastOpen] = useState(false)
   const classes = {
     section: isSpecialOfferPopup
       ? `${styles.section} ${styles.section_active}`
@@ -27,7 +28,14 @@ function SpecialOfferPopup() {
 
   const onSubmit = evt => {
     evt.preventDefault()
-
+    if (values.name === "" || values.phone === ""){
+      setMsg("Пожалуйста заполните все поля")
+      setIsErrorToastOpen(true)
+      setTimeout(() => {
+        setIsErrorToastOpen(false)
+      }, 1500)
+    }
+    else {
     send(
       'service_h9d8ifl',
       'template_hxwx5yl',
@@ -52,6 +60,7 @@ function SpecialOfferPopup() {
       }, function(error) {
         console.log('FAILED...', error)
       })
+    }
   }
 
   return (
@@ -82,6 +91,7 @@ function SpecialOfferPopup() {
           <CloseIcon />
         </div>
       </div>
+      <ErrorToast msg={msg} isErrorToastOpen={isErrorToastOpen} />
     </section>
   )
 }

@@ -49,7 +49,7 @@ function FixPricePopup() {
         </thead>
         <tbody>
         <tr>
-            <th>Алюминий 1-1 (профиль чистый)</th>
+            <th>Алюминий (профиль чистый)</th>
             <th> <ArrowDownIcon /> 160 руб/кг</th>
           </tr>
           <tr>
@@ -61,7 +61,7 @@ function FixPricePopup() {
             <th> <ArrowDownIcon /> 140 руб/кг</th>
           </tr>
           <tr>
-            <th>Медь а1-1 (блеск)</th>
+            <th>Медь (блеск)</th>
             <th> <ArrowUpIcon /> 670 руб/кг</th>
           </tr>
           <tr>
