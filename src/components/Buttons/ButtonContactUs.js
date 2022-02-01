@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from "../../styles/ButtonContactUs.module.sass"
 
-function ButtonContactUs() {
+function ButtonContactUs({values}) {
+  //const {name,phone} = values && values;
   return (
     <button type="submit" className={styles.button}>
       <div />

@@ -48,41 +48,30 @@ function FixPricePopup() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th>Чёрный металл</th>
-            <th> <ArrowUpIcon /> 25 000р/тонна</th>
+        <tr>
+            <th>Алюминий 1-1 (профиль чистый)</th>
+            <th> <ArrowDownIcon /> 160 руб/кг</th>
           </tr>
-
+          <tr>
+            <th>алюминий (эл/тех)</th>
+            <th> <ArrowDownIcon /> 180 руб/кг</th>
+          </tr>
+          <tr>
+            <th>алюминий (диски)</th>
+            <th> <ArrowDownIcon /> 140 руб/кг</th>
+          </tr>
           <tr>
             <th>Медь а1-1 (блеск)</th>
-            <th> <ArrowUpIcon /> 660 руб/кг</th>
+            <th> <ArrowUpIcon /> 670 руб/кг</th>
           </tr>
-
           <tr>
-            <th>Алюминий 1-1 (пищевой)</th>
-            <th> <ArrowDownIcon /> 130 руб/кг</th>
-          </tr>
-
-          <tr>
-            <th>Медь (шина)</th>
+            <th>Медь (mix)</th>
             <th> <ArrowUpIcon /> 650 руб/кг</th>
           </tr>
-
-          <tr>
-            <th>Нержавеющая сталь 6%</th>
-            <th> <ArrowDownIcon /> 50 руб/кг</th>
-          </tr>
-
           <tr>
             <th>Латунь</th>
-            <th> <ArrowDownIcon /> 340 руб/кг</th>
+            <th> <ArrowDownIcon /> 370 руб/кг</th>
           </tr>
-
-          <tr>
-            <th>Бронза</th>
-            <th> <ArrowDownIcon /> 360 руб/кг</th>
-          </tr>
-
           <tr>
             <th>Свинец чистый</th>
             <th> <ArrowUpIcon /> 110 руб/кг</th>
@@ -90,12 +79,16 @@ function FixPricePopup() {
 
           <tr>
             <th>Аккумуляторы</th>
-            <th><ArrowUpIcon /> 68 руб/кг</th>
+            <th><ArrowUpIcon /> 70 руб/кг</th>
           </tr>
 
           <tr>
             <th>Лом автомобиля</th>
             <th> <ArrowUpIcon /> 24 000 руб/тонна</th>
+          </tr>
+          <tr>
+            <th>Чёрный металл</th>
+            <th> <ArrowUpIcon /> 25 000р/тонна</th>
           </tr>
         </tbody>
 
