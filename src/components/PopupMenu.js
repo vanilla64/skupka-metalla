@@ -9,7 +9,7 @@ import { enableBodyScroll } from "body-scroll-lock"
 function PopupMenu() {
   const { isMobileMenuOpen, setIsMobileMenuOpen, setIsBurgerActive } = useContext(AppContext)
 
-  const { MAIN, ABOUT, SERVICES, DISMANTLING, PRICE, REVIEWS, VACANCY } = ROUTES
+  const { MAIN, ABOUT, SERVICES, DISMANTLING, PRICE, REVIEWS, VACANCY,CONTACTS } = ROUTES
 
   const onLinkClick = () => {
     const menu = document.querySelector('#burgerMenu')
@@ -80,6 +80,9 @@ function PopupMenu() {
             </motion.li>
             <motion.li className={styles.listItem} variants={item}>
               <NavLink onClick={onLinkClick} className={styles.navLink} to={VACANCY}>Вакансии</NavLink>
+            </motion.li>
+            <motion.li className={styles.listItem} variants={item}>
+              <NavLink onClick={onLinkClick} className={styles.navLink} to={CONTACTS}>Контакты</NavLink>
             </motion.li>
           </motion.ul>
         </nav>
