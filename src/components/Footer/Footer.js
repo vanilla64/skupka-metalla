@@ -52,6 +52,10 @@ function Footer() {
           <p className={styles.copyright}>Copyright © 2021 Все права защищены.</p>
           {/*<a href={'/'} className={styles.policy}>Политика конфиденциальности</a>*/}
 
+
+          <a href="https://metrika.yandex.ru/stat/?id=87255925&from=informer" target="_blank" rel="noreferrer"><img src="https://informer.yandex.ru/informer/87255925/3_1_FFFFFFFF_FFFFFFFF_0_visits" style={{width: '88px', height: '31px', border: 0}} alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" className="ym-advanced-informer" data-cid={87255925} data-lang="ru" /></a>
+
+
           <a href="https://webmaster.yandex.ru/siteinfo/?site=https://skupkametala.ru">
             <img
               width="88"
