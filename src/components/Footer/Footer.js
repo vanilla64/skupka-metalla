@@ -64,11 +64,7 @@ function Footer() {
               src="https://yandex.ru/cycounter?https://skupkametala.ru&theme=light&lang=ru"/>
           </a>
 
-          <div className={styles.roboweb}>
-            <p>
-              Разработка и продвижение <a href="https://roboweb.team/" rel="noreferrer" target="_blank">roboweb.team</a>
-            </p>
-          </div>
+
         </div>
 
         {/*<div className={styles.roboweb}>*/}
