@@ -29,8 +29,9 @@ function FixPricePopup() {
 
   return (
     <div className={classes.fixPricePopup}>
-      <div onClick={onCloseClick} className={styles.closeLine} />
-
+      <div onClick={onCloseClick} className={styles.closeLine}>
+      <CloseIcon />
+      </div>
       <div onClick={onCloseClick} className={styles.closeIcon}>
         <CloseIcon />
       </div>

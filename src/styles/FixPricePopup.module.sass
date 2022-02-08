@@ -10,6 +10,7 @@
   padding: 30px
   transition: .3s
   visibility: hidden
+  z-index: 2
   opacity: 0
   &_active
     right: 30px
@@ -99,13 +100,9 @@
     background: linear-gradient(90deg, #ff9d02 0, #ff67cb 51%, #ff9d02)
 
 .closeLine
-  width: 40px
-  height: 4px
-  border-radius: 14px
-  background: #fff
   position: absolute
-  top: 10px
-  left: calc( 50% - 20px )
+  top: 0px
+  right: 0
   display: none
   @media screen and (max-width: 425px)
     display: block
