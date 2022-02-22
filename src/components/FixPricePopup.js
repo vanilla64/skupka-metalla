@@ -63,11 +63,11 @@ function FixPricePopup() {
           </tr>
           <tr>
             <th>Медь (блеск)</th>
-            <th> <ArrowUpIcon /> 670 руб/кг</th>
+            <th> <ArrowUpIcon /> 700 руб/кг</th>
           </tr>
           <tr>
             <th>Медь (mix)</th>
-            <th> <ArrowUpIcon /> 650 руб/кг</th>
+            <th> <ArrowUpIcon /> 680 руб/кг</th>
           </tr>
           <tr>
             <th>Латунь</th>
@@ -85,11 +85,11 @@ function FixPricePopup() {
 
           <tr>
             <th>Лом автомобиля</th>
-            <th> <ArrowUpIcon /> 24 000 руб/тонна</th>
+            <th> <ArrowUpIcon /> 28 руб/кг</th>
           </tr>
           <tr>
             <th>Чёрный металл</th>
-            <th> <ArrowUpIcon /> 25 000р/тонна</th>
+            <th> <ArrowUpIcon /> 28 руб/кг</th>
           </tr>
         </tbody>
 

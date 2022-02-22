@@ -9,45 +9,45 @@ function CuprumAndBrass() {
         bgGrey
         img={aluET}
         title={'Медь а1-1 (блеск)'}
-        priceRozn={660} priseOpt={680} />
+        priceRozn={700} priseOpt={710} />
 
       <TableRow
         img={aluET}
         title={'Медь (шина)'}
-        priceRozn={650} priseOpt={670} />
+        priceRozn={690} priseOpt={700} />
 
       <TableRow
         bgGrey
         img={aluET}
         title={'Медь а1-2 (кусок)'}
-        priceRozn={650} priseOpt={670} />
+        priceRozn={690} priseOpt={700} />
 
       <TableRow
         img={aluET}
         title={'Медь (разносорт.)'}
-        priceRozn={640} priseOpt={660} />
+        priceRozn={680} priseOpt={690} />
 
       <TableRow
         bgGrey
         img={aluET}
         title={'Латунь'}
-        priceRozn={340} priseOpt={350} />
+        priceRozn={370} priseOpt={380} />
 
       <TableRow
         img={aluET}
         title={'Латунная стружка'}
-        priceRozn={250} priseOpt={260} />
+        priceRozn={300} priseOpt={310} />
 
       <TableRow
         bgGrey
         img={aluET}
         title={'Радиаторы медь/латунь'}
-        priceRozn={350} priseOpt={360} />
+        priceRozn={380} priseOpt={390} />
 
       <TableRow
         img={aluET}
         title={'Бронза'}
-        priceRozn={360} priseOpt={370} />
+        priceRozn={400} priseOpt={410} />
     </>
   )
 }

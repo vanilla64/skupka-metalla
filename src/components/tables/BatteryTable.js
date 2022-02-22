@@ -9,12 +9,12 @@ function BatteryTable() {
         bgGrey
         img={aluET}
         title={'Аккумуляторы (гель, полипропилен)'}
-        priceRozn={68} priseOpt={70} />
+        priceRozn={70} priseOpt={75} />
 
       <TableRow
         img={aluET}
         title={'Аккумуляторы (эбонит)'}
-        priceRozn={55} priseOpt={60} />
+        priceRozn={60} priseOpt={65} />
     </>
   )
 }
