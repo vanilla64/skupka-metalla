@@ -85,11 +85,11 @@ function FixPricePopup() {
 
           <tr>
             <th>Лом автомобиля</th>
-            <th> <ArrowUpIcon /> 28 руб/кг</th>
+            <th> <ArrowDownIcon /> 21 руб/кг</th>
           </tr>
           <tr>
             <th>Чёрный металл</th>
-            <th> <ArrowUpIcon /> 28 руб/кг</th>
+            <th> <ArrowDownIcon /> 21 руб/кг</th>
           </tr>
         </tbody>
 

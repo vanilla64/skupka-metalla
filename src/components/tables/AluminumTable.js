@@ -58,6 +58,7 @@ function AluminumTable() {
       <TableRow
         img={aluET}
         title={'Алюминий офсет'}
+        requestPrice
         priceRozn={85} priseOpt={95} />
 
       <TableRow
@@ -69,17 +70,20 @@ function AluminumTable() {
       <TableRow
         img={aluET}
         title={'Алюминиевая стружка (засор от 5%)'}
+        requestPrice
         priceRozn={70} priseOpt={80} />
 
       <TableRow
         bgGrey
         img={aluET}
         title={'Электродвигатель (корпус алюминий)'}
+        requestPrice
         priceRozn={45} priseOpt={45} />
 
       <TableRow
         img={aluET}
         title={'Электродвигатель (корпус чугун)'}
+        requestPrice
         priceRozn={40} priseOpt={40} />
     </>
   )
