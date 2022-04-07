@@ -14,7 +14,7 @@ function BlackMetalTable() {
       <TableRow
         img={aluET}
         title={'Чугун'}
-        priceRozn={28} priseOpt={28} />
+        priceRozn={21} priseOpt={21} />
 
       <TableRow
         bgGrey
